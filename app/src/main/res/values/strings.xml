@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PC Shop</string>
+    <string name="app_name2">Your order</string>
+    <string name="choice">Выбрать иконку</string>
+    <string name="summ">Сумма заказа</string>
+    <string name="_0">0</string>
+    <string name="kol_vo_0">0</string>
+</resources>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_margin="8dp">
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Ваше имя"
+        android:inputType="textPersonName" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:scaleType="centerCrop"
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        app:srcCompat="@drawable/pc" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginRight="20dp"
+        android:layout_gravity="end"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="@string/choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Spinner
+        android:id="@+id/Spinner"
+        android:layout_width="match_parent"
+        android:layout_height="51dp" />
+
+    <ImageView
+        android:id="@+id/goodsImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pc_icon" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/priseTitle"
+            android:text="@string/summ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp" />
+
+        <TextView
+            android:id="@+id/priseTextView"
+            android:layout_below="@id/priseTitle"
+            android:text="@string/_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/textkolvo"
+            android:text="Кол-во"
+            android:layout_toRightOf="@id/priseTitle"
+            android:layout_marginLeft="110dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"
+             />
+    <Button
+        android:onClick="ButtonOnClickMinus"
+        android:layout_marginTop="20dp"
+       android:layout_marginLeft="200dp"
+        android:text="-"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:id="@+id/Buttonminus"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+
+        <TextView
+            android:id="@+id/priseO"
+            android:layout_below="@id/priseTitle"
+            android:text="@string/kol_vo_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginLeft="265dp"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/Buttonplus"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="20dp"
+            android:onClick="ButtonOnClickPlus"
+            android:text="+"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </RelativeLayout>
+    <Button
+        android:onClick="addToCart"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:text="Добавить в корзину"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
